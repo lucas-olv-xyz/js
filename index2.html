@@ -3,19 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <style>
+      body{
+         background-color: #1f1e21;
+  font-family: "inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #ffffff;
+      }
       .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-            grid-gap: 20px;
-        }
-
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+        max-width: 85vw;
+        margin: 0 auto;
+      }
+      
         .card {
+          cursor: pointer;
+          padding: 10px;
             display: grid;
             grid-template-rows: max-content 200px 1fr;
-        }
+            box-shadow: 0px 20px 30px 0px rgba(121, 121, 121, 0.08);
+            border-radius: 12px;
+            transition: transform 0.3s;
 
+        }
+        .card:hover {
+          transform: scale(1.1);
+        }
+        
         .card img {
             object-fit: cover;
             width: 100%;
@@ -27,13 +52,13 @@
   <body>
     <div class="cards">
       <article class="card">
-        <header>
-          <h2>omnifood</h2>
+       
+          <h2>Omnifood</h2>
         </header>
         <img src="1.jpg" alt="Hot air balloons" />
         <div class="content">
           <p>
-            site de assinatura de refeições que permite aos usuários pagar uma
+            Site de assinatura de refeições que permite aos usuários pagar uma
             taxa mensal e receber refeições saudáveis e deliciosas entregues
             diretamente em suas casas. O site foi construído com tecnologias
             modernas e possui uma interface intuitiva e fácil de usar.
@@ -47,7 +72,7 @@
         <img src="2.jpg" alt="Hot air balloons" />
         <div class="content">
           <p>
-            design cuidadosamente planejado, o site utiliza uma paleta de cores
+            Design cuidadosamente planejado, o site utiliza uma paleta de cores
             harmoniosa, hierarquia visual clara e grids e flexbox para
             proporcionar uma experiência de navegação intuitiva e agradável ao
             usuário.”
@@ -56,7 +81,7 @@
       </article>
       <article class="card">
         <header>
-          <h2>lisbon cadeiras</h2>
+          <h2>Lisbon cadeiras</h2>
         </header>
         <img src="3.jpg" alt="Hot air balloons" />
         <div class="content">
@@ -70,7 +95,7 @@
       </article>
       <article class="card">
         <header>
-          <h2>matheus martins psicologia</h2>
+          <h2>Matheus martins</h2>
         </header>
         <img src="4.png" alt="Hot air balloons" />
         <div class="content">
